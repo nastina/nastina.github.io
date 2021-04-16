@@ -11,12 +11,15 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a href="#" class="nav-link"></a>
             <button class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" type="button" data-toggle="collapse" data-target="desktopnav">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="desktopnav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href=index.html class="nav-link active">Etusivu</a></li>
@@ -28,8 +31,20 @@
                         <a href=fourth.html class="nav-link">Saapumisohjeet</a></li>
                     </li>
                 </ul>
-            </div>
+            </div>  
+            <script>
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active">Etusivu</a>
+                    <a href="#news">Info</a>
+                    <a href="#contact">Ilmoittautuminen</a>
+                    <a href="#about">Saapumisohjeet</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </script>
         </nav>
+
         <a href="index.html"><span><img src="kuvat/logoroosa.png" alt="logo A&A" class="img-fluid" id="logo"></span></a>
         <div class="container">
             <div class="row">
